@@ -79,6 +79,7 @@ scale_political_culture <- cbind(wvs7[ , 6], wvs7[ , which(grepl("Q235", variabl
 demographics <- cbind(wvs7[ , 6], wvs7[ , which(grepl("Q260", variables)):which(grepl("Q290", variables))])
 
 
+
 # --- Step 2: Clean up the data
 
 #isolate relevant variables
