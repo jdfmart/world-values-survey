@@ -80,7 +80,7 @@ demographics <- cbind(wvs7[ , 6], wvs7[ , which(grepl("Q260", variables)):which(
 
 
 
-# --- Step 2: Clean up the data
+# --- Step 2: Clean up the data 
 
 #isolate relevant variables
 #data <- wvs7 %>% select(B_COUNTRY, )
