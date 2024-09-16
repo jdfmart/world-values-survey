@@ -2,6 +2,7 @@
 
 # Load relevant libraries
 library(tidyverse)
+library(haven)
 
 
 # --- Step 1: Load data
@@ -74,13 +75,14 @@ scale_political_interest <- cbind(wvs7[ , 6], wvs7[ , which(grepl("Q199", variab
 # Political Culture and Political Regimes (Q235-Q259)
 scale_political_culture <- cbind(wvs7[ , 6], wvs7[ , which(grepl("Q235", variables)):which(grepl("Q259", variables))])
 
+# Demographic and Socioeconomic Variables (Q260-Q290)
+demographics <- cbind(wvs7[ , 6], wvs7[ , which(grepl("Q260", variables)):which(grepl("Q290", variables))])
 
 
 # --- Step 2: Clean up the data
 
 #isolate relevant variables
-wvs_relevant <- wvs7 %>% select(
-  B_COUNTRY,
-  
-)
+#data <- wvs7 %>% select(B_COUNTRY,)
+
+
 
